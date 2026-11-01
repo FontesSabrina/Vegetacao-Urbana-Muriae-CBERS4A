@@ -1,0 +1,87 @@
+Analysis - Accuracy assessment results
+
+Thematic map:
+classificacao_maxver_cbers_20251027.tif
+
+Sampling file:
+validacao_cbers_20251027.gpkg
+
+Estimator:
+Stratified estimator
+
+Response design state:
+198/200 samples labeled
+
+1) Error matrix:
+;;Validation
+;;1 (Vegetação);2 (Área Urbana);3 (Solo Exposto);4 (Pastagem);Total;User's accuracy;Total class area (m²);Wi
+Thematic map;1;50;0;0;0;50;1.0;5491328.0;0.20243
+;2;1;44;0;3;48;0.91667;10126400.0;0.37329
+;3;3;18;25;4;50;0.5;2981504.0;0.10991
+;4;15;2;1;32;50;0.64;8528320.0;0.31438
+;total;69;64;26;39;198;;27127552.0
+;Producer's accuracy;0.65066;0.86777;0.89733;0.86232;;0.80076
+
+2) Accuracy:
+
+Overall:
+;Overall Accuracy;Standard deviation
+;0.80076;0.02744
+
+User:
+;User's Accuracy;Standard deviation
+1 (Vegetação);1.0;0.0
+2 (Área Urbana);0.91667;0.04031
+3 (Solo Exposto);0.5;0.07143
+4 (Pastagem);0.64;0.06857
+
+Producer:
+;Producer's Accuracy;Standard deviation
+1 (Vegetação);0.65066;0.04898
+2 (Área Urbana);0.86777;0.0267
+3 (Solo Exposto);0.89733;0.0922
+4 (Pastagem);0.86232;0.05234
+
+2b) Accuracy matrix of estimated area proportion:
+
+User:
+;;Validation
+;;1 (Vegetação);2 (Área Urbana);3 (Solo Exposto);4 (Pastagem)
+Thematic map;1;1.0;-;-;-
+;2;0.02083;0.91667;-;0.0625
+;3;0.06;0.36;0.5;0.08
+;4;0.3;0.04;0.02;0.64
+
+Producer:
+;;Validation
+;;1 (Vegetação);2 (Área Urbana);3 (Solo Exposto);4 (Pastagem)
+Thematic map;1;0.65066;-;-;-
+;2;0.025;0.86777;-;0.09999
+;3;0.0212;0.10034;0.89733;0.03768
+;4;0.30315;0.03189;0.10267;0.86232
+
+3) Error matrix of estimated area proportion:
+;;Validation
+;;1 (Vegetação);2 (Área Urbana);3 (Solo Exposto);4 (Pastagem);Wi
+Thematic map;1;0.20243;-;-;-;0.20243
+;2;0.00778;0.34218;-;0.02333;0.37329
+;3;0.00659;0.03957;0.05495;0.00879;0.10991
+;4;0.09431;0.01258;0.00629;0.2012;0.31438
+;total;0.31111;0.39432;0.06124;0.23333
+
+4) Quadratic error matrix of estimated area proportion:
+;;Validation
+;;1 (Vegetação);2 (Área Urbana);3 (Solo Exposto);4 (Pastagem)
+Thematic map;1;-;-;-;-
+;2;6e-05;0.00023;-;0.00017
+;3;1e-05;6e-05;6e-05;2e-05
+;4;0.00042;8e-05;4e-05;0.00046
+;total;0.02231;0.01899;0.01006;0.02562
+
+5) Class area adjusted:
+;Area adjusted (m²);Error;Lower limit;Upper limit;Coefficient of variation;Uncertainty
+1 (Vegetação);8439680.90667;605349.80376;7253195.2913;9626166.52203;7.17 %;0.14058
+2 (Área Urbana);10697007.57333;515228.83832;9687159.05022;11706856.09644;4.82 %;0.0944
+3 (Solo Exposto);1661318.4;272849.41908;1126533.5386;2196103.2614;16.42 %;0.3219
+4 (Pastagem);6329545.12;695112.38544;4967124.84454;7691965.39546;10.98 %;0.21525
+total;27127552.0

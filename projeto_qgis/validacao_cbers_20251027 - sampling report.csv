@@ -1,0 +1,19 @@
+Sampling Report
+
+General
+Sampling Layer;validacao_cbers_20251027
+Thematic Map;classificacao_maxver_cbers_20251027
+Sampling Type;Stratified random sampling
+Stratified method;Fixed values
+Total of Samples;200
+Min Distance;30.0 metros
+Neighbor Aggregation;None
+Random Seed;Auto
+
+Distribution of samples on the thematic map
+Pix Val;Num Samples;Total Pixels;Total Area (m²)
+1;50;85802;5491328.0
+2;50;158225;10126400.0
+3;50;46586;2981504.0
+4;50;133255;8528320.0
+

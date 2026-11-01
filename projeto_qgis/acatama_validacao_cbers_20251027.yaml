@@ -1,0 +1,912 @@
+general:
+  config_file_version: 260700
+thematic_map:
+  path: C:/Users/Sabrina/Downloads/classificacao_maxver_cbers_20251027.tif
+  band: 1
+  nodata: '0'
+sampling_design:
+  tab_activated: 0
+  simple_random_sampling:
+    num_samples: 306
+    num_samples_overall_accuracy: 85%
+    num_samples_half_width_ci: 4,0%
+    num_samples_confidence_interval: 95%
+    min_distance: 0.0
+    post_stratification: false
+    post_stratification_map_path: C:/Users/Sabrina/Downloads/classificacao_maxver_cbers_20251027.tif
+    post_stratification_map_band: 1
+    post_stratification_map_nodata: '0'
+    classes_selected_for_sampling: null
+    with_neighbors_aggregation: false
+    num_neighbors: '8'
+    min_neighbors_with_the_same_class: '1'
+    random_sampling_options: false
+    automatic_random_seed: true
+    with_random_seed_by_user: false
+    random_seed_by_user: ''
+  stratified_random_sampling:
+    stratification_map_path: C:/Users/Sabrina/Downloads/classificacao_maxver_cbers_20251027.tif
+    stratification_map_band: 1
+    stratification_map_nodata: '0'
+    sampling_random_method: ''
+    overall_std_error: 0.01
+    minimum_samples_per_stratum: 30
+    stratified_random_sampling_table: null
+    min_distance: 0.0
+    with_neighbors_aggregation: false
+    num_neighbors: '8'
+    min_neighbors_with_the_same_class: '1'
+    random_sampling_options: false
+    automatic_random_seed: true
+    with_random_seed_by_user: false
+    random_seed_by_user: ''
+  systematic_sampling:
+    systematic_sampling_unit: Distance
+    points_spacing: 0.0
+    num_samples_overall_accuracy: 85%
+    num_samples_half_width_ci: 4,0%
+    num_samples_confidence_interval: 95%
+    initial_inset_mode: Random
+    initial_inset: 0.0
+    max_xy_offset: 0.0
+    post_stratification: false
+    post_stratification_map_path: C:/Users/Sabrina/Downloads/classificacao_maxver_cbers_20251027.tif
+    post_stratification_map_band: 1
+    post_stratification_map_nodata: '0'
+    classes_selected_for_sampling: null
+    with_neighbors_aggregation: false
+    num_neighbors: '8'
+    min_neighbors_with_the_same_class: '1'
+    random_sampling_options: false
+    automatic_random_seed: true
+    with_random_seed_by_user: false
+    random_seed_by_user: ''
+sampling_layer: validacao_cbers_20251027.gpkg
+dialog_size:
+- 1920
+- 1009
+response_design_grid_settings_first_open: false
+grid_view_widgets:
+  columns: 2
+  rows: 1
+current_sample_idx: 154
+sampling_unit_pixel_buffer: 0
+sampling_unit_color: '#ff0000'
+fit_to_sample: 120.0
+is_completed: false
+view_widgets_config:
+  0:
+    view_name: cbers_falsa_cor
+    layer_name: cbers_falsa_cor
+    render_file_path: cbers_20251027_B1234_31983.tif
+    scale_factor: 1.0
+  1:
+    view_name: cbers_20251027_B1234_31983
+    layer_name: cbers_20251027_B1234_31983
+    render_file_path: cbers_20251027_B1234_31983.tif
+    scale_factor: 1.0
+labeling_buttons:
+  1:
+    name: "Vegeta\xE7\xE3o"
+    color: '#1b7837'
+    thematic_class: '1'
+    shortcut: null
+  2:
+    name: "\xC1rea Urbana"
+    color: '#e31a1c'
+    thematic_class: '2'
+    shortcut: null
+  3:
+    name: Solo Exposto
+    color: '#d9a066'
+    thematic_class: '3'
+    shortcut: null
+  4:
+    name: Pastagem
+    color: '#a6d96a'
+    thematic_class: '4'
+    shortcut: null
+auto_next_sample: true
+samples:
+  0:
+    label_id: 1
+    sample_id: 76
+  1:
+    label_id: 1
+    sample_id: 169
+  2:
+    label_id: 1
+    sample_id: 145
+  3:
+    label_id: 1
+    sample_id: 19
+  4:
+    label_id: 4
+    sample_id: 155
+  5:
+    label_id: 1
+    sample_id: 175
+  6:
+    label_id: 1
+    sample_id: 134
+  7:
+    label_id: 4
+    sample_id: 146
+  8:
+    label_id: 4
+    sample_id: 86
+  9:
+    label_id: 3
+    sample_id: 105
+  10:
+    label_id: 2
+    sample_id: 104
+  11:
+    label_id: 1
+    sample_id: 57
+  12:
+    label_id: 4
+    sample_id: 154
+  13:
+    label_id: 1
+    sample_id: 122
+  14:
+    label_id: 1
+    sample_id: 84
+  15:
+    label_id: 3
+    sample_id: 120
+  16:
+    label_id: 2
+    sample_id: 191
+  17:
+    label_id: 2
+    sample_id: 130
+  18:
+    label_id: 3
+    sample_id: 177
+  19:
+    label_id: 2
+    sample_id: 15
+  20:
+    label_id: 1
+    sample_id: 174
+  21:
+    label_id: 4
+    sample_id: 18
+  22:
+    label_id: 2
+    sample_id: 4
+  23:
+    label_id: 1
+    sample_id: 159
+  24:
+    label_id: 2
+    sample_id: 24
+  25:
+    label_id: 2
+    sample_id: 101
+  26:
+    label_id: 1
+    sample_id: 199
+  27:
+    label_id: 2
+    sample_id: 184
+  28:
+    label_id: 1
+    sample_id: 80
+  29:
+    label_id: 1
+    sample_id: 197
+  30:
+    label_id: 1
+    sample_id: 6
+  32:
+    label_id: 1
+    sample_id: 195
+  33:
+    label_id: 4
+    sample_id: 27
+  34:
+    label_id: 4
+    sample_id: 55
+  35:
+    label_id: 4
+    sample_id: 123
+  36:
+    label_id: 2
+    sample_id: 87
+  37:
+    label_id: 4
+    sample_id: 71
+  38:
+    label_id: 1
+    sample_id: 35
+  39:
+    label_id: 1
+    sample_id: 200
+  40:
+    label_id: 1
+    sample_id: 23
+  41:
+    label_id: 4
+    sample_id: 165
+  42:
+    label_id: 3
+    sample_id: 102
+  43:
+    label_id: 2
+    sample_id: 38
+  44:
+    label_id: 1
+    sample_id: 29
+  45:
+    label_id: 1
+    sample_id: 110
+  46:
+    label_id: 1
+    sample_id: 11
+  47:
+    label_id: 1
+    sample_id: 163
+  48:
+    label_id: 2
+    sample_id: 115
+  49:
+    label_id: 2
+    sample_id: 188
+  50:
+    label_id: 2
+    sample_id: 40
+  51:
+    label_id: 4
+    sample_id: 39
+  52:
+    label_id: 1
+    sample_id: 138
+  53:
+    label_id: 2
+    sample_id: 126
+  54:
+    label_id: 1
+    sample_id: 16
+  55:
+    label_id: 2
+    sample_id: 106
+  56:
+    label_id: 1
+    sample_id: 107
+  57:
+    label_id: 3
+    sample_id: 166
+  58:
+    label_id: 2
+    sample_id: 68
+  59:
+    label_id: 2
+    sample_id: 176
+  60:
+    label_id: 4
+    sample_id: 135
+  61:
+    label_id: 4
+    sample_id: 179
+  62:
+    label_id: 1
+    sample_id: 196
+  63:
+    label_id: 2
+    sample_id: 1
+  64:
+    label_id: 1
+    sample_id: 140
+  65:
+    label_id: 2
+    sample_id: 144
+  66:
+    label_id: 2
+    sample_id: 85
+  67:
+    label_id: 1
+    sample_id: 151
+  68:
+    label_id: 1
+    sample_id: 48
+  70:
+    label_id: 2
+    sample_id: 103
+  71:
+    label_id: 3
+    sample_id: 56
+  72:
+    label_id: 1
+    sample_id: 33
+  73:
+    label_id: 3
+    sample_id: 10
+  74:
+    label_id: 2
+    sample_id: 30
+  75:
+    label_id: 3
+    sample_id: 3
+  76:
+    label_id: 2
+    sample_id: 167
+  77:
+    label_id: 1
+    sample_id: 44
+  78:
+    label_id: 2
+    sample_id: 45
+  79:
+    label_id: 4
+    sample_id: 187
+  80:
+    label_id: 4
+    sample_id: 7
+  81:
+    label_id: 1
+    sample_id: 168
+  82:
+    label_id: 4
+    sample_id: 198
+  83:
+    label_id: 1
+    sample_id: 89
+  84:
+    label_id: 2
+    sample_id: 74
+  85:
+    label_id: 1
+    sample_id: 92
+  86:
+    label_id: 1
+    sample_id: 118
+  87:
+    label_id: 1
+    sample_id: 141
+  88:
+    label_id: 2
+    sample_id: 152
+  89:
+    label_id: 1
+    sample_id: 129
+  90:
+    label_id: 2
+    sample_id: 185
+  91:
+    label_id: 2
+    sample_id: 67
+  92:
+    label_id: 4
+    sample_id: 5
+  93:
+    label_id: 1
+    sample_id: 131
+  94:
+    label_id: 1
+    sample_id: 137
+  95:
+    label_id: 4
+    sample_id: 181
+  96:
+    label_id: 2
+    sample_id: 59
+  97:
+    label_id: 1
+    sample_id: 82
+  98:
+    label_id: 2
+    sample_id: 128
+  99:
+    label_id: 2
+    sample_id: 143
+  100:
+    label_id: 2
+    sample_id: 88
+  101:
+    label_id: 4
+    sample_id: 46
+  102:
+    label_id: 2
+    sample_id: 25
+  103:
+    label_id: 2
+    sample_id: 51
+  104:
+    label_id: 4
+    sample_id: 153
+  105:
+    label_id: 1
+    sample_id: 66
+  106:
+    label_id: 4
+    sample_id: 192
+  107:
+    label_id: 3
+    sample_id: 127
+  108:
+    label_id: 4
+    sample_id: 65
+  109:
+    label_id: 2
+    sample_id: 52
+  110:
+    label_id: 2
+    sample_id: 125
+  111:
+    label_id: 4
+    sample_id: 113
+  112:
+    label_id: 1
+    sample_id: 54
+  113:
+    label_id: 1
+    sample_id: 47
+  114:
+    label_id: 3
+    sample_id: 117
+  115:
+    label_id: 1
+    sample_id: 50
+  116:
+    label_id: 2
+    sample_id: 20
+  117:
+    label_id: 2
+    sample_id: 194
+  118:
+    label_id: 1
+    sample_id: 73
+  119:
+    label_id: 2
+    sample_id: 21
+  120:
+    label_id: 3
+    sample_id: 173
+  121:
+    label_id: 2
+    sample_id: 193
+  122:
+    label_id: 1
+    sample_id: 70
+  123:
+    label_id: 4
+    sample_id: 36
+  124:
+    label_id: 2
+    sample_id: 61
+  125:
+    label_id: 1
+    sample_id: 114
+  126:
+    label_id: 1
+    sample_id: 75
+  127:
+    label_id: 2
+    sample_id: 97
+  128:
+    label_id: 2
+    sample_id: 132
+  129:
+    label_id: 1
+    sample_id: 162
+  130:
+    label_id: 2
+    sample_id: 14
+  131:
+    label_id: 3
+    sample_id: 149
+  132:
+    label_id: 2
+    sample_id: 93
+  133:
+    label_id: 1
+    sample_id: 34
+  134:
+    label_id: 1
+    sample_id: 58
+  135:
+    label_id: 4
+    sample_id: 9
+  136:
+    label_id: 1
+    sample_id: 182
+  137:
+    label_id: 1
+    sample_id: 108
+  138:
+    label_id: 1
+    sample_id: 190
+  139:
+    label_id: 3
+    sample_id: 158
+  140:
+    label_id: 2
+    sample_id: 100
+  141:
+    label_id: 2
+    sample_id: 148
+  142:
+    label_id: 3
+    sample_id: 91
+  143:
+    label_id: 3
+    sample_id: 172
+  144:
+    label_id: 4
+    sample_id: 41
+  145:
+    label_id: 2
+    sample_id: 22
+  146:
+    label_id: 4
+    sample_id: 109
+  147:
+    label_id: 4
+    sample_id: 121
+  148:
+    label_id: 2
+    sample_id: 98
+  149:
+    label_id: 1
+    sample_id: 150
+  150:
+    label_id: 4
+    sample_id: 62
+  151:
+    label_id: 1
+    sample_id: 112
+  152:
+    label_id: 3
+    sample_id: 60
+  153:
+    label_id: 2
+    sample_id: 31
+  154:
+    label_id: 2
+    sample_id: 2
+  155:
+    label_id: 3
+    sample_id: 69
+  156:
+    label_id: 2
+    sample_id: 99
+  157:
+    label_id: 2
+    sample_id: 164
+  158:
+    label_id: 1
+    sample_id: 77
+  159:
+    label_id: 3
+    sample_id: 142
+  160:
+    label_id: 3
+    sample_id: 37
+  161:
+    label_id: 4
+    sample_id: 157
+  162:
+    label_id: 2
+    sample_id: 136
+  163:
+    label_id: 4
+    sample_id: 170
+  164:
+    label_id: 1
+    sample_id: 119
+  165:
+    label_id: 2
+    sample_id: 78
+  166:
+    label_id: 2
+    sample_id: 53
+  167:
+    label_id: 4
+    sample_id: 8
+  168:
+    label_id: 4
+    sample_id: 111
+  169:
+    label_id: 2
+    sample_id: 133
+  170:
+    label_id: 4
+    sample_id: 178
+  171:
+    label_id: 1
+    sample_id: 161
+  172:
+    label_id: 3
+    sample_id: 147
+  173:
+    label_id: 4
+    sample_id: 26
+  174:
+    label_id: 1
+    sample_id: 189
+  175:
+    label_id: 1
+    sample_id: 64
+  176:
+    label_id: 3
+    sample_id: 49
+  177:
+    label_id: 2
+    sample_id: 81
+  178:
+    label_id: 1
+    sample_id: 139
+  179:
+    label_id: 2
+    sample_id: 28
+  180:
+    label_id: 4
+    sample_id: 116
+  181:
+    label_id: 2
+    sample_id: 186
+  182:
+    label_id: 4
+    sample_id: 156
+  183:
+    label_id: 2
+    sample_id: 160
+  184:
+    label_id: 4
+    sample_id: 63
+  185:
+    label_id: 1
+    sample_id: 90
+  186:
+    label_id: 3
+    sample_id: 124
+  187:
+    label_id: 2
+    sample_id: 42
+  188:
+    label_id: 2
+    sample_id: 43
+  189:
+    label_id: 1
+    sample_id: 79
+  190:
+    label_id: 1
+    sample_id: 72
+  191:
+    label_id: 3
+    sample_id: 12
+  192:
+    label_id: 3
+    sample_id: 95
+  193:
+    label_id: 4
+    sample_id: 96
+  194:
+    label_id: 2
+    sample_id: 17
+  195:
+    label_id: 3
+    sample_id: 183
+  196:
+    label_id: 3
+    sample_id: 171
+  197:
+    label_id: 1
+    sample_id: 83
+  198:
+    label_id: 1
+    sample_id: 180
+  199:
+    label_id: 1
+    sample_id: 32
+samples_order:
+- 76
+- 169
+- 145
+- 19
+- 155
+- 175
+- 134
+- 146
+- 86
+- 105
+- 104
+- 57
+- 154
+- 122
+- 84
+- 120
+- 191
+- 130
+- 177
+- 15
+- 174
+- 18
+- 4
+- 159
+- 24
+- 101
+- 199
+- 184
+- 80
+- 197
+- 6
+- 94
+- 195
+- 27
+- 55
+- 123
+- 87
+- 71
+- 35
+- 200
+- 23
+- 165
+- 102
+- 38
+- 29
+- 110
+- 11
+- 163
+- 115
+- 188
+- 40
+- 39
+- 138
+- 126
+- 16
+- 106
+- 107
+- 166
+- 68
+- 176
+- 135
+- 179
+- 196
+- 1
+- 140
+- 144
+- 85
+- 151
+- 48
+- 13
+- 103
+- 56
+- 33
+- 10
+- 30
+- 3
+- 167
+- 44
+- 45
+- 187
+- 7
+- 168
+- 198
+- 89
+- 74
+- 92
+- 118
+- 141
+- 152
+- 129
+- 185
+- 67
+- 5
+- 131
+- 137
+- 181
+- 59
+- 82
+- 128
+- 143
+- 88
+- 46
+- 25
+- 51
+- 153
+- 66
+- 192
+- 127
+- 65
+- 52
+- 125
+- 113
+- 54
+- 47
+- 117
+- 50
+- 20
+- 194
+- 73
+- 21
+- 173
+- 193
+- 70
+- 36
+- 61
+- 114
+- 75
+- 97
+- 132
+- 162
+- 14
+- 149
+- 93
+- 34
+- 58
+- 9
+- 182
+- 108
+- 190
+- 158
+- 100
+- 148
+- 91
+- 172
+- 41
+- 22
+- 109
+- 121
+- 98
+- 150
+- 62
+- 112
+- 60
+- 31
+- 2
+- 69
+- 99
+- 164
+- 77
+- 142
+- 37
+- 157
+- 136
+- 170
+- 119
+- 78
+- 53
+- 8
+- 111
+- 133
+- 178
+- 161
+- 147
+- 26
+- 189
+- 64
+- 49
+- 81
+- 139
+- 28
+- 116
+- 186
+- 156
+- 160
+- 63
+- 90
+- 124
+- 42
+- 43
+- 79
+- 72
+- 12
+- 95
+- 96
+- 17
+- 183
+- 171
+- 83
+- 180
+- 32
+analysis:
+  estimator: Stratified estimator
+  accuracy_assessment:
+    area_unit: 0
+    z_score: 1.96
+    csv_separator: ;
+    csv_decimal: .

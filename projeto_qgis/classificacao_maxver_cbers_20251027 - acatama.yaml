@@ -1,0 +1,395 @@
+general:
+  config_file_version: 260700
+thematic_map:
+  path: C:/Users/Sabrina/Downloads/classificacao_maxver_cbers_20251027.tif
+  band: 1
+  nodata: '0'
+sampling_design:
+  tab_activated: 1
+  simple_random_sampling:
+    num_samples: 306
+    num_samples_overall_accuracy: 85%
+    num_samples_half_width_ci: 4,0%
+    num_samples_confidence_interval: 95%
+    min_distance: 0.0
+    post_stratification: false
+    post_stratification_map_path: C:/Users/Sabrina/Downloads/classificacao_maxver_cbers_20251027.tif
+    post_stratification_map_band: 1
+    post_stratification_map_nodata: '0'
+    classes_selected_for_sampling: null
+    with_neighbors_aggregation: false
+    num_neighbors: '8'
+    min_neighbors_with_the_same_class: '1'
+    random_sampling_options: false
+    automatic_random_seed: true
+    with_random_seed_by_user: false
+    random_seed_by_user: ''
+  stratified_random_sampling:
+    stratification_map_path: C:/Users/Sabrina/Downloads/classificacao_maxver_cbers_20251027.tif
+    stratification_map_band: 1
+    stratification_map_nodata: '0'
+    sampling_random_method: Fixed values by category (manually)
+    overall_std_error: 0.01
+    minimum_samples_per_stratum: 30
+    stratified_random_sampling_table:
+      values_and_colors_table:
+        Pixel Value:
+        - 1
+        - 2
+        - 3
+        - 4
+        Red:
+        - 27
+        - 227
+        - 217
+        - 166
+        Green:
+        - 120
+        - 26
+        - 160
+        - 217
+        Blue:
+        - 55
+        - 28
+        - 102
+        - 106
+        Alpha:
+        - 255
+        - 255
+        - 255
+        - 255
+      row_count: 4
+      pixel_count:
+      - 85802
+      - 158225
+      - 46586
+      - 133255
+      header:
+      - Pix Val
+      - Color
+      - Num Samples
+      - 'On'
+      column_count: 4
+      num_samples:
+      - '50'
+      - '50'
+      - '50'
+      - '50'
+      'On':
+      - true
+      - true
+      - true
+      - true
+    min_distance: 30.0
+    with_neighbors_aggregation: false
+    num_neighbors: '8'
+    min_neighbors_with_the_same_class: '1'
+    random_sampling_options: false
+    automatic_random_seed: true
+    with_random_seed_by_user: false
+    random_seed_by_user: ''
+  systematic_sampling:
+    systematic_sampling_unit: Distance
+    points_spacing: 0.0
+    num_samples_overall_accuracy: 85%
+    num_samples_half_width_ci: 4,0%
+    num_samples_confidence_interval: 95%
+    initial_inset_mode: Random
+    initial_inset: 0.0
+    max_xy_offset: 0.0
+    post_stratification: false
+    post_stratification_map_path: C:/Users/Sabrina/Downloads/classificacao_maxver_cbers_20251027.tif
+    post_stratification_map_band: 1
+    post_stratification_map_nodata: '0'
+    classes_selected_for_sampling: null
+    with_neighbors_aggregation: false
+    num_neighbors: '8'
+    min_neighbors_with_the_same_class: '1'
+    random_sampling_options: false
+    automatic_random_seed: true
+    with_random_seed_by_user: false
+    random_seed_by_user: ''
+sampling_report:
+  general:
+    sampling_layer: validacao_cbers_20251027
+    thematic_map: classificacao_maxver_cbers_20251027
+    sampling_map: null
+    sampling_type: stratified
+    stratified_method: fixed values
+    total_of_samples: 200
+    points_spacing: null
+    initial_inset: null
+    max_xy_offset: null
+    post_stratification_map: null
+    post_stratification_classes: []
+    min_distance: 30.0 metros
+    neighbor_aggregation: null
+    random_seed: Auto
+    area_unit: 0
+  samples:
+    thematic_map:
+      pix_val:
+      - 1
+      - 2
+      - 3
+      - 4
+      color:
+      - - 27
+        - 120
+        - 55
+        - 255
+      - - 227
+        - 26
+        - 28
+        - 255
+      - - 217
+        - 160
+        - 102
+        - 255
+      - - 166
+        - 217
+        - 106
+        - 255
+      num_samples:
+      - 50
+      - 50
+      - 50
+      - 50
+      total_pixels:
+      - 85802
+      - 158225
+      - 46586
+      - 133255
+      total_area:
+      - 5491328.0
+      - 10126400.0
+      - 2981504.0
+      - 8528320.0
+    total_of_samples_by_stratum:
+    - 50
+    - 50
+    - 50
+    - 50
+    samples_not_in_thematic_map: 0
+    sampling_map: null
+    samples_not_in_sampling_map: null
+    post_stratification: null
+    samples_not_in_post_stratification: null
+sampling_layer: validacao_cbers_20251027.gpkg
+dialog_size: null
+response_design_grid_settings_first_open: true
+grid_view_widgets:
+  columns: 2
+  rows: 1
+current_sample_idx: 0
+sampling_unit_pixel_buffer: 0
+sampling_unit_color: '#ff0000'
+fit_to_sample: 120
+is_completed: false
+view_widgets_config: {}
+labeling_buttons: null
+auto_next_sample: true
+samples: {}
+samples_order:
+- 62
+- 189
+- 49
+- 8
+- 86
+- 82
+- 93
+- 112
+- 103
+- 123
+- 114
+- 16
+- 193
+- 155
+- 99
+- 43
+- 50
+- 109
+- 32
+- 196
+- 140
+- 145
+- 54
+- 72
+- 159
+- 22
+- 126
+- 73
+- 199
+- 177
+- 20
+- 120
+- 38
+- 192
+- 102
+- 183
+- 168
+- 128
+- 146
+- 111
+- 1
+- 164
+- 200
+- 59
+- 124
+- 13
+- 80
+- 176
+- 134
+- 21
+- 151
+- 26
+- 161
+- 23
+- 30
+- 154
+- 141
+- 37
+- 61
+- 166
+- 53
+- 87
+- 162
+- 129
+- 160
+- 51
+- 101
+- 171
+- 76
+- 64
+- 144
+- 165
+- 75
+- 194
+- 139
+- 84
+- 117
+- 6
+- 5
+- 179
+- 178
+- 97
+- 83
+- 70
+- 17
+- 52
+- 115
+- 92
+- 107
+- 198
+- 175
+- 79
+- 173
+- 81
+- 137
+- 180
+- 66
+- 18
+- 158
+- 104
+- 10
+- 19
+- 157
+- 7
+- 9
+- 167
+- 78
+- 77
+- 46
+- 31
+- 113
+- 67
+- 131
+- 106
+- 195
+- 181
+- 29
+- 148
+- 105
+- 36
+- 98
+- 133
+- 2
+- 138
+- 149
+- 185
+- 191
+- 15
+- 94
+- 127
+- 118
+- 100
+- 142
+- 33
+- 85
+- 147
+- 96
+- 60
+- 45
+- 188
+- 48
+- 74
+- 3
+- 95
+- 130
+- 182
+- 170
+- 55
+- 186
+- 121
+- 42
+- 44
+- 11
+- 68
+- 57
+- 89
+- 90
+- 91
+- 153
+- 39
+- 122
+- 14
+- 28
+- 116
+- 187
+- 150
+- 41
+- 169
+- 172
+- 135
+- 56
+- 163
+- 152
+- 190
+- 110
+- 47
+- 108
+- 4
+- 65
+- 71
+- 27
+- 34
+- 58
+- 184
+- 197
+- 35
+- 143
+- 88
+- 40
+- 132
+- 69
+- 12
+- 119
+- 63
+- 156
+- 25
+- 125
+- 174
+- 24
+- 136
+analysis:
+  estimator: Stratified estimator
