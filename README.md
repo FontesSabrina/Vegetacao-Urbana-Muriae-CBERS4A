@@ -1,16 +1,12 @@
-# 🌳 Vegetação urbana de Muriaé-MG com CBERS-4A
-
-![Status](https://img.shields.io/badge/status-TCC%20em%20revis%C3%A3o-blue)
-![QGIS](https://img.shields.io/badge/QGIS-SCP%20%2B%20AcATaMa-589632?logo=qgis&logoColor=white)
-![Python](https://img.shields.io/badge/Python-GDAL%20%2F%20NumPy-3776AB?logo=python&logoColor=white)
+# Vegetação urbana de Muriaé-MG com CBERS-4A
 
 Trabalho de Conclusão de Curso (TCC) em **Gestão da Tecnologia da Informação** (IF Sudeste MG – Campus Muriaé)
 sobre a **classificação da cobertura vegetal do perímetro urbano de Muriaé-MG** e o cálculo do
 **Índice de Distribuição de Vegetação Urbana (IDVU)**, que mede a área verde por habitante (m²/hab).
 
-📄 **Texto completo do TCC:** [`documento/TCC_Muriae_CBERS4A.pdf`](documento/TCC_Muriae_CBERS4A.pdf)
+Texto completo do TCC: [`documento/TCC_Muriae_CBERS4A.pdf`](documento/TCC_Muriae_CBERS4A.pdf)
 
-## 🎯 O que foi feito
+## Visão geral
 
 - Imagem **CBERS-4A / WPM** de 27/10/2025, resolução de 8 m (bandas 1–4), em **SIRGAS 2000 / UTM 23S** (EPSG:31983).
 - Classificação supervisionada por **Máxima Verossimilhança** (Python/NumPy) em quatro classes:
@@ -20,7 +16,7 @@ sobre a **classificação da cobertura vegetal do perímetro urbano de Muriaé-M
 - **IDVU** do perímetro urbano e da área urbanizada densa (IBGE), com população por setor censitário
   (Censo 2022) distribuída pelo **método dasimétrico**.
 
-## 📊 Resultados principais
+## Resultados principais
 
 | Indicador | Valor |
 |---|---|
@@ -30,10 +26,20 @@ sobre a **classificação da cobertura vegetal do perímetro urbano de Muriaé-M
 | IDVU do perímetro (mapa / área ajustada) | 59,62 / 89,90 m²/hab |
 | IDVU da área urbanizada densa (mapa / ajustado) | 14,84 / 24,82 m²/hab |
 
-Referência: a OMS indica 12 m²/hab como mínimo e 36 m²/hab como ideal. Os detalhes, as tabelas e as
+Referência: a Organização Mundial da Saúde (OMS) indica 12 m²/hab como mínimo e 36 m²/hab como ideal. Os detalhes, as tabelas e as
 limitações estão no texto do TCC.
 
-## 📂 Estrutura do repositório
+## Mapas
+
+![Mapa de cobertura do solo do perímetro urbano de Muriaé-MG](projeto_qgis/mapas/mapa%20de%20cobertura%20do%20solo%20final.png)
+
+*Mapa de cobertura do solo do perímetro urbano de Muriaé-MG (CBERS-4A, 27/10/2025, resolução de 8 m).*
+
+![Área urbanizada densa (IBGE) sobre a classificação](projeto_qgis/mapas/mapa_area_densa_IBGE_sobre_CBERS.png)
+
+*Área urbanizada densa (IBGE) em cores plenas sobre a classificação; as demais áreas do perímetro aparecem esmaecidas.*
+
+## Estrutura do repositório
 
 ```
 tcc-vegetacao-muriae/
@@ -60,18 +66,18 @@ tcc-vegetacao-muriae/
     └── csv/                              Tabelas exportadas por classe
 ```
 
-## 🛠️ Ferramentas
+## Ferramentas utilizadas
 
 - **QGIS** com os plugins **Semi-Automatic Classification Plugin (SCP)** e **AcATaMa**
 - **Python 3** com **GDAL/OGR**, **NumPy** e **pandas**
 
-## 🗂️ Fontes dos dados
+## Fontes dos dados
 
 - Imagem **CBERS-4A / WPM**: Catálogo de Imagens do **INPE**
 - Perímetro urbano: **IEDE-MG** (Infraestrutura Estadual de Dados Espaciais de Minas Gerais)
 - Setores censitários, agregados por setor e Áreas Urbanizadas: **IBGE**, Censo Demográfico 2022
 
-## 💾 Como baixar o projeto
+## Obtenção dos arquivos
 
 Os arquivos grandes (`.tif`, `.gpkg` e o CSV do IBGE) ficam no **Git LFS**. Para baixar tudo:
 
@@ -83,7 +89,7 @@ git clone https://github.com/FontesSabrina/tcc-vegetacao-muriae.git
 O botão **Code → Download ZIP** **não** traz os arquivos do LFS (só "ponteiros"); use o `git clone`.
 Depois, abra `projeto_qgis/Nova_Classificação_06-10-2026.qgz` no QGIS.
 
-## 👥 Autoria
+## Autoria e vínculo institucional
 
 - **Sabrina Caetano Fontes**
 - **Lucas Faria Schuenck de Souza**
