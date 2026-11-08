@@ -1,83 +1,89 @@
-# 🌳 Vegetação urbana de Muriaé-MG com CBERS-4A
+[README.md](https://github.com/user-attachments/files/34554343/README.md)
+# Vegetação urbana de Muriaé-MG com CBERS-4A
 
-![Status](https://img.shields.io/badge/status-em%20andamento-orange)
-![QGIS](https://img.shields.io/badge/QGIS-SCP%20%2B%20AcATaMa-589632?logo=qgis&logoColor=white)
-![Python](https://img.shields.io/badge/Python-GDAL%20%2F%20NumPy-3776AB?logo=python&logoColor=white)
+Trabalho de Conclusão de Curso (TCC) em **Gestão da Tecnologia da Informação** (IF Sudeste MG – Campus Muriaé)
+sobre a **classificação da cobertura vegetal do perímetro urbano de Muriaé-MG** e o cálculo do
+**Índice de Distribuição de Vegetação Urbana (IDVU)**, que mede a área verde por habitante (m²/hab).
 
-Trabalho de Conclusão de Curso (TCC) do curso de **Gestão da Tecnologia da Informação**.
+Texto completo do TCC: [`documento/TCC_Muriae_CBERS4A.pdf`](documento/TCC_Muriae_CBERS4A.pdf)
 
-Classificação supervisionada da cobertura do solo no perímetro urbano de **Muriaé-MG** a partir de uma
-imagem do satélite **CBERS-4A (câmera WPM, 27/10/2025)**, com validação da acurácia e cálculo do
-**Índice de Distribuição de Vegetação Urbana (IDVU)**, que mede a área verde por habitante.
+## Visão geral
 
-> ⚠️ **Trabalho em andamento.** Por enquanto só a **Metodologia** está escrita. As outras partes do
-> texto serão adicionadas aqui conforme forem ficando prontas.
+- Imagem **CBERS-4A / WPM** de 27/10/2025, resolução de 8 m (bandas 1–4), em **SIRGAS 2000 / UTM 23S** (EPSG:31983).
+- Classificação supervisionada por **Máxima Verossimilhança** (Python/NumPy) em quatro classes:
+  Vegetação, Área Urbana, Solo Exposto e Pastagem. Os corpos d'água entram como quinta classe, por máscara vetorial.
+- **Validação independente** com 200 pontos estratificados (AcATaMa) e estimador de **Olofsson et al. (2014)**:
+  acurácias, áreas ajustadas e intervalos de confiança de 95%.
+- **IDVU** do perímetro urbano e da área urbanizada densa (IBGE), com população por setor censitário
+  (Censo 2022) distribuída pelo **método dasimétrico**.
 
----
+## Resultados principais
 
-## 📑 Metodologia (resumo)
+| Indicador | Valor |
+|---|---|
+| Acurácia global (4 classes) | 80,61% (±5,25%) |
+| Kappa | 0,727 |
+| Acurácia global (2 classes, comparável à etapa anterior) | 89,78% (±4,2%) |
+| IDVU do perímetro (mapa / área ajustada) | 59,62 / 89,90 m²/hab |
+| IDVU da área urbanizada densa (mapa / ajustado) | 14,84 / 24,82 m²/hab |
 
-O estudo segue sete etapas:
+Referência: a Organização Mundial da Saúde (OMS) indica 12 m²/hab como mínimo e 36 m²/hab como ideal. Os detalhes, as tabelas e as
+limitações estão no texto do TCC.
 
-1. Delimitação e caracterização da área de estudo (perímetro urbano de 27,09 km², IEDE-MG)
-2. Aquisição e pré-processamento da imagem CBERS-4A / WPM (órbita/ponto 198/140)
-3. Definição das classes temáticas e coleta de amostras de treinamento
-4. Classificação supervisionada por **Máxima Verossimilhança**
-5. Incorporação dos corpos d'água a partir de base vetorial oficial
-6. Validação da acurácia e estimativa de áreas (método de Olofsson)
-7. Cálculo do **IDVU** com população estimada por método dasimétrico (setores censitários IBGE 2022)
-
-Sistema de referência: **SIRGAS 2000 / UTM fuso 23S**.
-
-O texto completo está em [`documento/3_Metodologia.docx`](documento/3_Metodologia.docx).
-
-## 📂 Estrutura do repositório
+## Estrutura do repositório
 
 ```
 tcc-vegetacao-muriae/
+├── README.md
 ├── documento/
-│   └── 3_Metodologia.docx                 Capítulo 3 do TCC
-└── projeto_qgis/                          Projeto completo do QGIS (mesma estrutura do original)
-    ├── Nova_Classificação_06-10-2026.qgz  Projeto do QGIS
-    ├── codigos_TCC/                       Scripts Python de cada etapa
+│   ├── TCC_Muriae_CBERS4A.pdf            TCC completo
+│   └── 3_Metodologia.docx                Capítulo 3 (versão preliminar)
+└── projeto_qgis/                         Projeto do QGIS e dados
+    ├── Nova_Classificação_06-10-2026.qgz Projeto do QGIS
+    ├── codigos_TCC/                      Scripts Python de cada etapa
     │   ├── 01_classificacao_maxver.py
     │   ├── 02_mascara_agua.py
     │   ├── 03_acuracia_olofsson.py
     │   └── 04_idvu.py
-    ├── 2025-10-27/recorte/                Bandas da cena CBERS-4A recortadas
-    ├── mapas/                             Mapas gerados (PNG)
-    ├── csv/                               Tabelas exportadas por classe
+    ├── 2025-10-27/recorte/               Bandas da cena CBERS-4A recortadas
+    ├── cbers_20251027_B1234_31983.tif    Imagem CBERS-4A (bandas 1–4)
+    ├── treino_cbers_20251027_corrigido.scpx   Amostras de treinamento (SCP/QGIS)
+    ├── pontos_validacao_4classes.gpkg    Pontos de validação
+    ├── perimetro_urbano_limpo_corrigido.gpkg  Perímetro urbano
+    ├── muriae_areas_densas.*             Área urbanizada densa (IBGE)
+    ├── MG_setores_CD2022.gpkg            Setores censitários de MG (IBGE)
     ├── Agregados_por_setores_basico_BR_…/ Dados do Censo 2022 (IBGE)
-    ├── MG_setores_CD2022.gpkg             Setores censitários de MG (IBGE)
-    └── …                                  Amostras, validação, classificações e estilos (.qml)
+    ├── mapas/                            Mapas gerados (PNG)
+    └── csv/                              Tabelas exportadas por classe
 ```
 
-## 🛠️ Ferramentas
+## Ferramentas utilizadas
 
 - **QGIS** com os plugins **Semi-Automatic Classification Plugin (SCP)** e **AcATaMa**
-- **Python 3** com **GDAL/OGR** e **NumPy** (scripts em `projeto_qgis/codigos_TCC`)
+- **Python 3** com **GDAL/OGR**, **NumPy** e **pandas**
 
-## 🗂️ Fontes dos dados
+## Fontes dos dados
 
 - Imagem **CBERS-4A / WPM**: Catálogo de Imagens do **INPE**
 - Perímetro urbano: **IEDE-MG** (Infraestrutura Estadual de Dados Espaciais de Minas Gerais)
-- Setores censitários e agregados por setor: **IBGE**, Censo Demográfico 2022
+- Setores censitários, agregados por setor e Áreas Urbanizadas: **IBGE**, Censo Demográfico 2022
 
-## 💾 Como baixar o projeto
+## Obtenção dos arquivos
 
-Os arquivos grandes (imagens `.tif`, camadas `.gpkg` e o CSV do IBGE) ficam no **Git LFS**.
-Para baixar tudo:
+Os arquivos grandes (`.tif`, `.gpkg` e o CSV do IBGE) ficam no **Git LFS**. Para baixar tudo:
 
 ```bash
 git lfs install
 git clone https://github.com/FontesSabrina/tcc-vegetacao-muriae.git
 ```
 
-Depois é só abrir `projeto_qgis/Nova_Classificação_06-10-2026.qgz` no QGIS.
+O botão **Code → Download ZIP** **não** traz os arquivos do LFS (só "ponteiros"); use o `git clone`.
+Depois, abra `projeto_qgis/Nova_Classificação_06-10-2026.qgz` no QGIS.
 
-> O botão **Code → Download ZIP** do GitHub **não** traz os arquivos do LFS (eles vêm só como
-> "ponteiros"). Use o `git clone` acima.
+## Autoria e vínculo institucional
 
-## 👩‍💻 Autoria
+- **Sabrina Caetano Fontes**
+- **Lucas Faria Schuenck de Souza**
+- Orientador: **Prof. Marcus Vinícius Souza Costa**
 
-**Sabrina Caetano Fontes**, Gestão da Tecnologia da Informação.
+Instituto Federal do Sudeste de Minas Gerais – Campus Muriaé · Gestão da Tecnologia da Informação · 2026.
